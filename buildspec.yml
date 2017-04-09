@@ -5,6 +5,7 @@ phases:
     commands:
       - echo Build started on `date`
       - mvn install
+      - aws s3 sync codepipeline-us-east-1-932158969871/example-pipeline/MyAppBuild/1aq5MFI s3://codepipeline-us-east-1-932158969871/example-pipeline/MyAppBuild
   post_build:
     commands:
       - echo Build completed on `date`
