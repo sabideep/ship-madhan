@@ -11,4 +11,4 @@ phases:
       - mvn package
 artifacts:
   files:
-    - shipwreck-app-1.0-SNAPSHOT.war
+    - /shipwreck-app-1.0-SNAPSHOT.war
